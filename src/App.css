@@ -1,6 +1,6 @@
 .snap-section {
-  min-height: 100vh; /* Ocupa el tamaño de la pantalla completa */
-  scroll-behavior: smooth; /* Desplazamiento suave */
+  min-height: 100vh; 
+  scroll-behavior: smooth; 
   width: 90%;
   margin: 0 auto;
 }
