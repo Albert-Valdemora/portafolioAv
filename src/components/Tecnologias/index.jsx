@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import "./style.css";
 import { Titulo } from "../titulo/Titulo";
 
 const index = () => {
