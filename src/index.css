@@ -32,3 +32,11 @@ html {
 ::-webkit-scrollbar-track {
   background: rgb(2 2 2);
 }
+
+
+.snap-section {
+  min-height: 100vh; 
+  scroll-behavior: smooth; 
+  width: 90%;
+  margin: 0 auto;
+}
