@@ -5,7 +5,7 @@ import { Titulo } from "../titulo/Titulo";
 const index = () => {
   return (
     <section className="h-screen">
-      <div className="h-screen content-center pt-24">
+      <div className="h-screen content-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimation animateIn="animate__fadeIn" duration={2}>
            <Titulo title='Tecnologías' />

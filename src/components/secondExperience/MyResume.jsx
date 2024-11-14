@@ -58,7 +58,6 @@ export const MyResume = () => {
     <>
       <ContenedorEstilizado>
         <Titulo title='Mi Resumen' />
-        {/* <h2 className="fw-normal text-center">Mi Resumen</h2> */}
 
         <div style={stylesNav}>
 
@@ -87,8 +86,8 @@ export const MyResume = () => {
 
         </div>
 
-        <SeccionContenedor visible={visible} className="container pt-5">
-          <div className="container pt-5">
+        <SeccionContenedor visible={visible} className="container">
+          <div className="container">
             <div className="row">
               {seccion !== "Educacion" ? (
                 <>
