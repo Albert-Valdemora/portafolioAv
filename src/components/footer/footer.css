@@ -1,10 +1,9 @@
 .container-footer{
-  background-color: rgba(0, 0, 0, 0.1); /* Fondo negro con 10% de opacidad */
+  background-color: rgba(0, 0, 0, 0.1); 
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  
   .container-footer{
     font-size: 12px;
     overflow: hidden;

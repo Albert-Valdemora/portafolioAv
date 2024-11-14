@@ -4,7 +4,7 @@ import Tecnologias from "./components/Tecnologias";
 import Project from "./components/Project";
 import { MyResume } from "./components/secondExperience/MyResume";
 import { Footer } from "./components/footer/Footer";
-import "./app.css";
+import './app.css'
 
 const Snap = styled.div`
   height: 100vh;

@@ -1,9 +1,9 @@
 import React from "react";
-import foto from "../../img/modelo1.png";
+import foto from "../img/modelo1.png";
 import styled from "styled-components";
-import CV from "../../assets/Albert Daniel Valdemora Suarez.pdf";
-import "../../assets/bootstrap.css";
-import "../../assets/virtual.css";
+import CV from "../assets/Albert Daniel Valdemora Suarez.pdf";
+import '../assets/bootstrap.css';
+import '../assets/virtual.css';
 
 const ImgStylizada = styled.img`
   width: 100%;
@@ -33,7 +33,7 @@ const index = () => {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 animate__animated animate__fadeInRight">
-            {/* <h1 className="fw-light">Albert Valdemora</h1> */}
+           
             <img
               src="https://readme-typing-svg.demolab.com?font=sans-serif&weight=800&size=45&duration=4000&pause=2000&color=FFFFFF&width=455&height=67&lines=Albert+Valdemora;Albert+Valdemora%F0%9F%91%8B"
               alt="Typing SVG"
