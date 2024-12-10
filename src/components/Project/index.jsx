@@ -14,11 +14,11 @@ const index = () => {
             
 
 
-              <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
+              <div className="rounded-[20px] w-[365px] h-[430px] overflow-hidden bg-slate-800 p-3">
                 <div className="cont-head">
                   <img
                     className="w-full h-48 object-cover rounded-lg"
-                    src="https://blog.accentiostudios.com/content/images/2023/09/1c754947-7724-4696-8aee-79ee71ef51aa.webp"
+                    src="./img/ScreenNest.png"
                     alt=""
                   />
                 </div>
@@ -27,18 +27,20 @@ const index = () => {
                     <span className="text-orange-400 font-bold">Albert Valdemora</span>
                   </p>
                   <p className="inline-block py-1 rounded-3xl text-sm ">
-                    <span className="text-white font-bold cursor-pointer">Abrir</span>
+                    <a href="https://screen-nest-omega.vercel.app/" target="_black" className="text-white font-bold cursor-pointer">Abrir</a>
                   </p>
                 </div>
                 <div className="cont-body">
-                  <h5>The Sevices provide for design</h5>
+                  <h5>ScreenNest</h5>
+                  <p>Es una aplicación web diseñada para los amantes del cine. Aquí podrás explorar una vasta colección de películas. </p>
                 </div>
               </div>
-              <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
+
+              <div className="rounded-[20px] w-[365px] h-[430px] overflow-hidden bg-slate-800 p-3">
                 <div className="cont-head">
                   <img
-                    className="w-full h-48 object-cover rounded-lg"
-                    src="https://media.sitepen.com/blog-images/2020/03/blog-ts-1024x538.png"
+                    className="w-full h-48 object-cover rounded-lg bg-center"
+                    src="./img/ToDoList.png"
                     alt=""
                   />
                 </div>
@@ -47,18 +49,20 @@ const index = () => {
                     <span className="text-orange-400 font-bold">Albert Valdemora</span>
                   </p>
                   <p className="inline-block py-1 rounded-3xl text-sm ">
-                    <span className="text-white font-bold cursor-pointer">Abrir</span>
+                    <a href="https://to-do-list-av.vercel.app/" target="_black" className="text-white font-bold cursor-pointer">Abrir</a>
                   </p>
                 </div>
                 <div className="cont-body">
-                  <h5>The Sevices provide for design</h5>
+                  <h5>To Do List</h5>
+                  <p>Es una aplicación web diseñada para organizar tus tareas diarias. Te permite crear, eliminar y marcar tareas como completadas de manera sencilla y eficiente.</p>
                 </div>
               </div>
-              <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
+
+              <div className="rounded-[20px] w-[365px] h-[430px] overflow-hidden bg-slate-800 p-3">
                 <div className="cont-head">
                   <img
-                    className="w-full h-48 object-cover rounded-lg"
-                    src="https://blog.accentiostudios.com/content/images/2023/09/1c754947-7724-4696-8aee-79ee71ef51aa.webp"
+                    className="w-full h-48 object-cover rounded-lg bg-center"
+                    src="./img/TeachMathX.png"
                     alt=""
                   />
                 </div>
@@ -67,13 +71,15 @@ const index = () => {
                     <span className="text-orange-400 font-bold">Albert Valdemora</span>
                   </p>
                   <p className="inline-block py-1 rounded-3xl text-sm ">
-                    <span className="text-white font-bold cursor-pointer">Abrir</span>
+                    <a href="https://teachmathx.vercel.app/" target="_black" className="text-white font-bold cursor-pointer">Abrir</a>
                   </p>
                 </div>
                 <div className="cont-body">
-                  <h5>The Sevices provide for design</h5>
+                  <h5>Teachmathx</h5>
+                  <p>Es una aplicación web diseñada para ayudar a los estudiantes a estudiar matemáticas y ponerlos a prueba. Permite aprender sobre límites, derivadas, continuidad y funciones.</p>
                 </div>
               </div>
+
 
 
               <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
@@ -96,6 +102,7 @@ const index = () => {
                   <h5>The Sevices provide for design</h5>
                 </div>
               </div>
+
               <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
                 <div className="cont-head">
                   <img
@@ -116,6 +123,7 @@ const index = () => {
                   <h5>The Sevices provide for design</h5>
                 </div>
               </div>
+
               <div className="rounded-[20px] w-[365px] h-[380px] overflow-hidden bg-slate-800 p-3">
                 <div className="cont-head">
                   <img
