@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Titulo } from "../titulo/Titulo";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const ContenedorEstilizado = styled.div`
   max-width: 90%;
@@ -56,6 +57,7 @@ export const MyResume = () => {
 
   return (
     <>
+      <ScrollAnimation animateIn="animate__fadeIn" duration={2}>
       <ContenedorEstilizado>
         <Titulo title='Mi Resumen' />
 
@@ -230,6 +232,7 @@ export const MyResume = () => {
           </div>
         </SeccionContenedor>
       </ContenedorEstilizado>
+        </ScrollAnimation>
     </>
   );
 };

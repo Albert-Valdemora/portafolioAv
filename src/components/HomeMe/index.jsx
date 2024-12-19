@@ -25,6 +25,7 @@ const CotainerEstilizado = styled.div`
 const index = () => {
   return (
     <>
+    
       <CotainerEstilizado className="container py-5 animate__animated animate__zoomInDown">
         <div className="row">
           <div className="col-lg-4 py-3">

@@ -2,9 +2,11 @@ import styled from "styled-components";
 import HomeMe from "./components/HomeMe";
 import Tecnologias from "./components/Tecnologias";
 import Project from "./components/Project";
+import Hablidades from "./components/Habilidades";
 import { MyResume } from "./components/secondExperience/MyResume";
 import { Footer } from "./components/footer/Footer";
 import './index.css'
+import { useEffect } from "react";
 
 const Snap = styled.div`
   height: 100vh;
@@ -34,6 +36,11 @@ const ButtonToTop = styled.button`
 `;
 
 const App = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []); 
+
   return (
     <>
       <Snap>
@@ -55,6 +62,10 @@ const App = () => {
 
           <div className="snap-section">
             <Project />
+          </div>
+
+          <div className="snap-section">
+            <Hablidades />
           </div>
         </main>
 
