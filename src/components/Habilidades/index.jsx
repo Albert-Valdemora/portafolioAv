@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ContenedorEstilizado = styled.div`
   max-width: 90%;
   margin: 20px auto 0px auto;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   scroll-behavior: smooth; /* Para que el scroll sea suave */
   display: flex;

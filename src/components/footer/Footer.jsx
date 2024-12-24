@@ -5,9 +5,9 @@ export const Footer = () => {
   return (
     <div className=" h-9 flex justify-between items-center px-5 container-footer">
       <div className="text-white">
-        <p className='m-0'>Albert Valdemora</p>
+        <p className='m-0 name'>Albert Valdemora</p>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 redes">
         <a
           href="https://github.com/Albert-Valdemora"
           target="_blank"

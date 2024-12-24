@@ -5,14 +5,22 @@ import Project from "./components/Project";
 import Hablidades from "./components/Habilidades";
 import { MyResume } from "./components/secondExperience/MyResume";
 import { Footer } from "./components/footer/Footer";
-import './index.css'
+import "./index.css";
 import { useEffect } from "react";
 
 const Snap = styled.div`
-  height: 100vh;
+  width: 100%;
+  height: auto;
+
   display: grid;
   grid-template-rows: auto 1fr auto;
   scroll-behavior: smooth;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ButtonToTop = styled.button`
@@ -36,10 +44,9 @@ const ButtonToTop = styled.button`
 `;
 
 const App = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, []); 
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -73,7 +80,6 @@ const App = () => {
           <Footer />
         </footer>
       </Snap>
-
 
       <a href="#homeAlbert" className="text-white">
         <ButtonToTop className="btn-outline-primary btn">

@@ -6,13 +6,19 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ContenedorEstilizado = styled.div`
   max-width: 90%;
   margin: 20px auto 0px auto;
-  max-height: 100vh;
+  height: auto;
   overflow: hidden;
   scroll-behavior: smooth; /* Para que el scroll sea suave */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 30px; 
+  font-size: 16px;
+
+  @media (max-width: 560px){
+    font-size: 12px;
+    width: 60%;
+  }
 `;
 
 const stylesNav = {
@@ -105,7 +111,7 @@ export const MyResume = () => {
                           <small className="fg-theme titulo">
                             Analista de Datos - Excel
                           </small>
-                          <p className="w-ful bg-slate-800 p-2 rounded-lg">
+                          <p className="w-ful bg-slate-800 p-2 rounded-lg ">
                             Durante este periodo, trabajé como gestor de bases
                             de datos utilizando SAP Business One. Me encargué de
                             cambiar el estado de diversas facturas, asegurando

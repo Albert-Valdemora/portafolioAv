@@ -9,35 +9,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+  overflow-x: hidden;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-  monospace;
+    monospace;
 }
 
 html {
   background-color: #0f172a;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-
   background: linear-gradient(180deg, transparent, rgb(2, 108, 224));
 }
 ::-webkit-scrollbar-track {
   background: rgb(2 2 2);
 }
 
-
 .snap-section {
-  min-height: 100vh; 
-  scroll-behavior: smooth; 
+  /* min-height: 100vh; */
+  height: auto;
+  scroll-behavior: smooth;
   width: 90%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  .snap-section{
+    padding: 10px;
+  } 
 }

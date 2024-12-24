@@ -7,6 +7,7 @@
   .container-footer{
     font-size: 12px;
     overflow: hidden;
+    
   }
   
 }
@@ -16,13 +17,17 @@
   .container-footer{
     font-size: 12px;
     overflow: hidden;
-    justify-content: space-between;
+    gap: 30px
+    /* justify-content: space-between; */
 
     .container-menu{
       display: none;
     }
+
+    .redes{
+      gap: 3px;
+      margin-inline: 25px;
+    }
   } 
-
-
-
 }
+

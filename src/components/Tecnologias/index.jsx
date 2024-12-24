@@ -1,6 +1,31 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Titulo } from "../titulo/Titulo";
+import styled from "styled-components";
+
+const GridContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  max-width: 32rem; 
+  gap: 2rem 2rem;
+
+ 
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+    max-width: none; 
+    grid-template-columns: repeat(5, 1fr); 
+  }
+  @media (max-width: 500px) {
+    width: 50%;
+    margin: 0 auto;
+    gap: 1rem 1rem;
+   
+  }
+`;
 
 const index = () => {
   return (
@@ -9,7 +34,8 @@ const index = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimation animateIn="animate__fadeIn" duration={2}>
            <Titulo title='Tecnologías' />
-            <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-14 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+            {/* <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-14 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"> */}
+            <GridContainer>
               <svg
                 width="90px"
                 height="90px"
@@ -420,7 +446,7 @@ const index = () => {
                   </defs>{" "}
                 </g>
               </svg>
-            </div>
+            </GridContainer>
           </ScrollAnimation>
         </div>
       </div>
