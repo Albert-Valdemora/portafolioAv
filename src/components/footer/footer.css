@@ -17,8 +17,7 @@
   .container-footer{
     font-size: 12px;
     overflow: hidden;
-    gap: 30px
-    /* justify-content: space-between; */
+    gap: 30px;
 
     .container-menu{
       display: none;
