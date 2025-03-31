@@ -6,20 +6,23 @@ import "../assets/bootstrap.css";
 import "../assets/virtual.css";
 
 const ImgStylizada = styled.img`
-  width: 100%; /* Escala automáticamente al tamaño del contenedor */
-  max-width: 100%; /* Evita que la imagen desborde su contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; 
+  object-fit: cover; 
   background-color: transparent;
   position: relative;
 `;
 
 const CotainerEstilizado = styled.div`
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto; /* Ajusta el contenedor automáticamente */
-  padding: 2rem 0; /* Espaciado superior e inferior */
+  height: auto; 
+  padding: 2rem 0;
+
 `;
 
 const Index = () => {

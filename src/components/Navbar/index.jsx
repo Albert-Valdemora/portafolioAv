@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { FaHome, FaCode } from "react-icons/fa";
 import { RiUserSettingsFill } from "react-icons/ri";
-
+import { IoSettingsSharp } from "react-icons/io5";
+import { GrServices } from "react-icons/gr";
 
 const ContUl = styled.ul`
   list-style: none;
@@ -14,8 +15,8 @@ const ContUl = styled.ul`
 
 const NavEstilizado = styled.nav`
   width: 50px;
-  padding: 20px;
-  height: 250px;
+  padding: 10px;
+  height: auto;
   position: fixed;
   top: 40%;
   right: 30px;
@@ -27,11 +28,14 @@ const NavEstilizado = styled.nav`
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
+
   &:hover {
-    /* background-color: #e0e0e0;  */
     filter: drop-shadow(1px 1px 5px #e0e0e0);
   }
 
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Icono = styled.li`
@@ -54,12 +58,57 @@ const Navbar = () => {
 
   const handleActivo = (key) => {
     setActivo(key);
+  
+    
+    const scrollTargets = {
+      home: "homeAlbert",
+      settings: "myresume", 
+      technology: "tecnologias", 
+      code: "project",
+      services: "servicios"
+    };
+  
+    const targetId = scrollTargets[key];
+    if (targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        { id: "homeAlbert", key: "home" },
+        { id: "myresume", key: "settings" },
+        { id: "tecnologias", key: "technology" },
+        { id: "project", key: "code" },
+        { id: "servicios", key: "services" },
+      ];
+
+      for (let section of sections) {
+        const element = document.getElementById(section.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+            setActivo(section.key);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const icons = [
     { component: <FaHome />, key: 'home' },
     { component: <RiUserSettingsFill />, key: 'settings' },
-    { component: <FaCode />, key: 'code' }
+    { component: <IoSettingsSharp />, key: 'technology' },
+    { component: <FaCode />, key: 'code' },
+    { component: <GrServices />, key: 'services' }
   ];
 
   return (

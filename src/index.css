@@ -10,9 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 code {
@@ -23,7 +20,9 @@ code {
 html {
   background-color: #0f172a;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -35,9 +34,9 @@ html {
   background: rgb(2 2 2);
 }
 
+
 .snap-section {
-  height: auto;
-  scroll-behavior: smooth;
+  padding: 10px 0;
   width: 90%;
   margin: 0 auto;
 }
@@ -45,5 +44,6 @@ html {
 @media (max-width: 768px){
   .snap-section{
     padding: 10px;
+    height: auto;
   } 
 }

@@ -2,19 +2,20 @@ import styled from "styled-components";
 import HomeMe from "./components/HomeMe";
 import Tecnologias from "./components/Tecnologias";
 import Project from "./components/Project";
-import Hablidades from "./components/Habilidades";
 import { MyResume } from "./components/secondExperience/MyResume";
 import { Footer } from "./components/footer/Footer";
 import "./index.css";
 import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Services from "./components/Habilidades";
 
 const Snap = styled.div`
   width: 100%;
   height: auto;
-
   display: grid;
   grid-template-rows: auto 1fr auto;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 
   @media (max-width: 768px) {
     display: flex;
@@ -51,7 +52,8 @@ const App = () => {
   return (
     <>
       <Snap>
-        <header className="snap-section mt-4" id="homeAlbert">
+        <Navbar />
+        <header className="snap-section h-screen mt-4" id="homeAlbert">
           <h1 className="text-4xl font-extrabold text-white animate__animated animate__flipInX">
             Albert <span className="text-orange-500">Valdemora</span>
           </h1>
@@ -59,20 +61,20 @@ const App = () => {
         </header>
 
         <main>
-          <div className="snap-section">
+          <div className="snap-section" id="myresume">
             <MyResume />
           </div>
 
-          <div className="snap-section">
+          <div className="snap-section" id="tecnologias">
             <Tecnologias />
           </div>
 
-          <div className="snap-section">
+          <div className="snap-section" id="project">
             <Project />
           </div>
 
-          <div className="snap-section">
-            <Hablidades />
+          <div className="snap-section" id="servicios">
+            <Services />
           </div>
         </main>
 
