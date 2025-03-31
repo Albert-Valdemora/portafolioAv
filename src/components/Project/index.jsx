@@ -114,9 +114,19 @@ const Index = () => {
                         <span className="text-xs text-zinc-500">Ver detalles</span>
                         <motion.div
                           whileHover={{ x: 5 }}
-                          className="w-8 h-8 flex items-center justify-center rounded-full bg-orange-500/20 group-hover:bg-orange-500 transition-colors duration-300"
+                          className="w-8 h-8 flex items-center justify-center rounded-full bg-orange-500/20  group-hover:bg-orange-500 transition-colors duration-300"
                         >
-                          <ExternalLink className="w-4 h-4 text-orange-300 group-hover:text-white" />
+                          {/* <ExternalLink href={project.liveUrl} target="_blank"
+                        rel="noopener noreferrer" className="w-4 h-4 text-orange-300 group-hover:text-white" />
+                        */}
+                        <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-4 h-4 text-orange-300 group-hover:text-white flex justify-center items-center"
+                      >
+                        <ExternalLink />
+                      </a>
                         </motion.div>
                       </div>
                     </div>

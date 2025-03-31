@@ -9,7 +9,7 @@ const ContenedorEstilizado = styled.div`
   margin: 20px auto 0px auto;
   min-height: 100vh;
   overflow: hidden;
-  scroll-behavior: smooth; /* Para que el scroll sea suave */
+  scroll-behavior: smooth; 
   display: flex;
   flex-direction: column;
   justify-content: center;
